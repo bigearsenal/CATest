@@ -1,0 +1,20 @@
+PODS:
+  - BEPureLayout (0.1.5):
+    - PureLayout
+  - PureLayout (3.1.6)
+
+DEPENDENCIES:
+  - BEPureLayout
+
+SPEC REPOS:
+  trunk:
+    - BEPureLayout
+    - PureLayout
+
+SPEC CHECKSUMS:
+  BEPureLayout: 02857e84485143783aef0c01e504a8fbb89356bc
+  PureLayout: bd3c4ec3a3819ad387c99ebb72c6b129c3ed4d2d
+
+PODFILE CHECKSUM: 17b9f48a3177fcabd4913587f647773743aaaa55
+
+COCOAPODS: 1.9.3
