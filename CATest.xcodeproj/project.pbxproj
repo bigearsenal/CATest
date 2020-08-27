@@ -15,6 +15,8 @@
 		BC38251924F6113400DF80DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC38251824F6113400DF80DB /* Assets.xcassets */; };
 		BC38251C24F6113400DF80DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC38251A24F6113400DF80DB /* LaunchScreen.storyboard */; };
 		BC7B74CA24F7955300913A19 /* UsingPresentationLayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74C924F7955300913A19 /* UsingPresentationLayerVC.swift */; };
+		BC7B74CD24F79D3D00913A19 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74CC24F79D3D00913A19 /* Extensions.swift */; };
+		BC7B74CF24F79EE800913A19 /* DisableImplicitAnimsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74CE24F79EE800913A19 /* DisableImplicitAnimsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		BC38251B24F6113400DF80DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC38251D24F6113400DF80DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC7B74C924F7955300913A19 /* UsingPresentationLayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingPresentationLayerVC.swift; sourceTree = "<group>"; };
+		BC7B74CC24F79D3D00913A19 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BC7B74CE24F79EE800913A19 /* DisableImplicitAnimsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableImplicitAnimsVC.swift; sourceTree = "<group>"; };
 		C3FE258FCE4E6C6C51C46D7A /* Pods-CATest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CATest.release.xcconfig"; path = "Target Support Files/Pods-CATest/Pods-CATest.release.xcconfig"; sourceTree = "<group>"; };
 		C8CA5ADF99E786916ACB5C0B /* Pods_CATest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CATest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -84,6 +88,7 @@
 			children = (
 				BC38250F24F6113200DF80DB /* AppDelegate.swift */,
 				BC38251124F6113200DF80DB /* SceneDelegate.swift */,
+				BC7B74CC24F79D3D00913A19 /* Extensions.swift */,
 				BC7B74CB24F7958700913A19 /* ViewControllers */,
 				BC38251524F6113200DF80DB /* Main.storyboard */,
 				BC38251824F6113400DF80DB /* Assets.xcassets */,
@@ -97,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				BC38251324F6113200DF80DB /* LayerCustomTranstionVC.swift */,
+				BC7B74CE24F79EE800913A19 /* DisableImplicitAnimsVC.swift */,
 				BC7B74C924F7955300913A19 /* UsingPresentationLayerVC.swift */,
 			);
 			path = ViewControllers;
@@ -217,10 +223,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC7B74CD24F79D3D00913A19 /* Extensions.swift in Sources */,
 				BC38251424F6113200DF80DB /* LayerCustomTranstionVC.swift in Sources */,
 				BC38251024F6113200DF80DB /* AppDelegate.swift in Sources */,
 				BC7B74CA24F7955300913A19 /* UsingPresentationLayerVC.swift in Sources */,
 				BC38251224F6113200DF80DB /* SceneDelegate.swift in Sources */,
+				BC7B74CF24F79EE800913A19 /* DisableImplicitAnimsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
