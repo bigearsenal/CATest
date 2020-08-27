@@ -9,10 +9,29 @@
 import Foundation
 import UIKit
 
-class MovingAircraftVC: UIViewController {
+class AircraftVC: UIViewController {
     lazy var button = UIButton(label: "animate")
-    lazy var path = UIBezierPath()
     lazy var shipLayer = CALayer()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.addSubview(button)
+        button.autoCenterInSuperview()
+        button.addTarget(self, action: #selector(animate), for: .touchUpInside)
+        
+        shipLayer.frame = CGRect(x: 0, y: 0, width: 66, height: 44)
+        shipLayer.position = CGPoint(x: 33, y: 150)
+        shipLayer.contents = UIImage(named: "aircraft")?.cgImage
+        view.layer.addSublayer(shipLayer)
+    }
+    
+    @objc func animate() {
+        
+    }
+}
+
+class MovingAircraftVC: AircraftVC {
+    lazy var path = UIBezierPath()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,18 +44,9 @@ class MovingAircraftVC: UIViewController {
         pathLayer.strokeColor = UIColor.red.cgColor
         pathLayer.lineWidth = 3
         view.layer.addSublayer(pathLayer)
-        
-        shipLayer.frame = CGRect(x: 0, y: 0, width: 66, height: 44)
-        shipLayer.position = CGPoint(x: 33, y: 150)
-        shipLayer.contents = UIImage(named: "aircraft")?.cgImage
-        view.layer.addSublayer(shipLayer)
-        
-        view.addSubview(button)
-        button.autoCenterInSuperview()
-        button.addTarget(self, action: #selector(animate), for: .touchUpInside)
     }
     
-    @objc func animate() {
+    override func animate() {
         // animation
         let animation = CAKeyframeAnimation(keyPath: "position")
         animation.duration = 4
