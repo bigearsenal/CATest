@@ -40,7 +40,7 @@ class MovingAircraftVC: AircraftVC {
         
         let pathLayer = CAShapeLayer()
         pathLayer.path = path.cgPath
-//        pathLayer.fillColor = UIColor.red.cgColor
+        pathLayer.fillColor = UIColor.clear.cgColor
         pathLayer.strokeColor = UIColor.red.cgColor
         pathLayer.lineWidth = 3
         view.layer.addSublayer(pathLayer)
