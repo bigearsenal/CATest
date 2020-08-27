@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class DisableImplicitAnimsVC: LayerCustomTranstionVC {
+class DisableImplicitAnimsVC: SingleCubeVC {
     override func changeColor() {
         let animation = CABasicAnimation(keyPath: "backgroundColor")
         animation.toValue = UIColor.random().cgColor

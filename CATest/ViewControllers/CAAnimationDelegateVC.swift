@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class CAAnimationDelegateVC: DisableImplicitAnimsVC, CAAnimationDelegate {
+class CAAnimationDelegateVC: SingleCubeVC, CAAnimationDelegate {
     override func changeColor() {
         let anim = CABasicAnimation(keyPath: "backgroundColor")
         anim.toValue = UIColor.random().cgColor
