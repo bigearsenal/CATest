@@ -27,7 +27,7 @@ extension UIColor {
 }
 
 extension CALayer {
-    func apply(_ anim: CABasicAnimation) {
+    func apply(_ anim: CABasicAnimation, forKey key: String? = nil) {
         guard let key = anim.keyPath else {return}
         anim.fromValue = (presentation() ?? self).value(forKeyPath: key)
         
@@ -37,6 +37,6 @@ extension CALayer {
         setValue(anim.toValue, forKey: key)
         CATransaction.commit()
         
-        add(anim, forKey: nil)
+        add(anim, forKey: key)
     }
 }
