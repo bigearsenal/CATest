@@ -23,6 +23,7 @@
 		BC7B74D724F7A7C200913A19 /* MovingAircraftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74D624F7A7C200913A19 /* MovingAircraftVC.swift */; };
 		BC7B74D924F7B02400913A19 /* VirtualPropertyAnimsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74D824F7B02400913A19 /* VirtualPropertyAnimsVC.swift */; };
 		BC7B74DC24F7D01500913A19 /* AnimationGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74DB24F7D01500913A19 /* AnimationGroupVC.swift */; };
+		BC7B74DE24F88E3F00913A19 /* TransitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74DD24F88E3F00913A19 /* TransitionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		BC7B74D624F7A7C200913A19 /* MovingAircraftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingAircraftVC.swift; sourceTree = "<group>"; };
 		BC7B74D824F7B02400913A19 /* VirtualPropertyAnimsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualPropertyAnimsVC.swift; sourceTree = "<group>"; };
 		BC7B74DB24F7D01500913A19 /* AnimationGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationGroupVC.swift; sourceTree = "<group>"; };
+		BC7B74DD24F88E3F00913A19 /* TransitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionVC.swift; sourceTree = "<group>"; };
 		C3FE258FCE4E6C6C51C46D7A /* Pods-CATest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CATest.release.xcconfig"; path = "Target Support Files/Pods-CATest/Pods-CATest.release.xcconfig"; sourceTree = "<group>"; };
 		C8CA5ADF99E786916ACB5C0B /* Pods_CATest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CATest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -122,6 +124,7 @@
 				BC7B74D624F7A7C200913A19 /* MovingAircraftVC.swift */,
 				BC7B74D824F7B02400913A19 /* VirtualPropertyAnimsVC.swift */,
 				BC7B74DB24F7D01500913A19 /* AnimationGroupVC.swift */,
+				BC7B74DD24F88E3F00913A19 /* TransitionVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				BC7B74DC24F7D01500913A19 /* AnimationGroupVC.swift in Sources */,
 				BC7B74D524F7A5C300913A19 /* KeyframeAnimationsVC.swift in Sources */,
 				BC7B74CA24F7955300913A19 /* UsingPresentationLayerVC.swift in Sources */,
+				BC7B74DE24F88E3F00913A19 /* TransitionVC.swift in Sources */,
 				BC7B74D124F7A07300913A19 /* CAAnimationDelegateVC.swift in Sources */,
 				BC38251224F6113200DF80DB /* SceneDelegate.swift in Sources */,
 				BC7B74CF24F79EE800913A19 /* DisableImplicitAnimsVC.swift in Sources */,
