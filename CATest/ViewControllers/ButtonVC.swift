@@ -10,14 +10,18 @@ import Foundation
 import UIKit
 
 class ButtonVC: UIViewController {
-    lazy var button = UIButton(label: "animate")
+    lazy var buttonStackView = UIStackView(axis: .horizontal, spacing: 16, alignment: .fill, distribution: .fill)
+    lazy var animateButton = UIButton(label: "animate", textColor: .blue)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(button)
-        button.autoPinEdge(toSuperviewEdge: .bottom)
-        button.autoAlignAxis(toSuperviewAxis: .vertical)
-        button.addTarget(self, action: #selector(animate), for: .touchUpInside)
+        view.backgroundColor = .white
+        view.addSubview(buttonStackView)
+        buttonStackView.autoPinEdge(toSuperviewEdge: .bottom)
+        buttonStackView.autoAlignAxis(toSuperviewAxis: .vertical)
+        
+        buttonStackView.addArrangedSubview(animateButton)
+        animateButton.addTarget(self, action: #selector(animate), for: .touchUpInside)
     }
     
     @objc func animate() {

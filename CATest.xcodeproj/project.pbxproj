@@ -27,6 +27,7 @@
 		BC7B74E024F8924D00913A19 /* TransitionTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74DF24F8924D00913A19 /* TransitionTabBarVC.swift */; };
 		BC7B74E224F894A500913A19 /* TransitionUIKitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74E124F894A500913A19 /* TransitionUIKitVC.swift */; };
 		BC7B74E424F8971200913A19 /* ButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74E324F8971200913A19 /* ButtonVC.swift */; };
+		BC7B74E624F8979700913A19 /* RenderInContextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74E524F8979700913A19 /* RenderInContextVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		BC7B74DF24F8924D00913A19 /* TransitionTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionTabBarVC.swift; sourceTree = "<group>"; };
 		BC7B74E124F894A500913A19 /* TransitionUIKitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionUIKitVC.swift; sourceTree = "<group>"; };
 		BC7B74E324F8971200913A19 /* ButtonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonVC.swift; sourceTree = "<group>"; };
+		BC7B74E524F8979700913A19 /* RenderInContextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderInContextVC.swift; sourceTree = "<group>"; };
 		C3FE258FCE4E6C6C51C46D7A /* Pods-CATest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CATest.release.xcconfig"; path = "Target Support Files/Pods-CATest/Pods-CATest.release.xcconfig"; sourceTree = "<group>"; };
 		C8CA5ADF99E786916ACB5C0B /* Pods_CATest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CATest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -134,6 +136,7 @@
 				BC7B74DD24F88E3F00913A19 /* TransitionVC.swift */,
 				BC7B74DF24F8924D00913A19 /* TransitionTabBarVC.swift */,
 				BC7B74E124F894A500913A19 /* TransitionUIKitVC.swift */,
+				BC7B74E524F8979700913A19 /* RenderInContextVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				BC38251224F6113200DF80DB /* SceneDelegate.swift in Sources */,
 				BC7B74CF24F79EE800913A19 /* DisableImplicitAnimsVC.swift in Sources */,
 				BC7B74D924F7B02400913A19 /* VirtualPropertyAnimsVC.swift in Sources */,
+				BC7B74E624F8979700913A19 /* RenderInContextVC.swift in Sources */,
 				BC7B74D724F7A7C200913A19 /* MovingAircraftVC.swift in Sources */,
 				BC7B74E424F8971200913A19 /* ButtonVC.swift in Sources */,
 				BC7B74D324F7A4DA00913A19 /* SingleCubeVC.swift in Sources */,
