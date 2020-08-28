@@ -22,7 +22,8 @@ class TableViewController: UITableViewController {
         TranstionUIKitVC(nibName: nil, bundle: nil),
         TransitionTabBarVC(nibName: nil, bundle: nil),
         RenderInContextVC(nibName: nil, bundle: nil),
-        CancellableAnimationVC(nibName: nil, bundle: nil)
+        CancellableAnimationVC(nibName: nil, bundle: nil),
+        SwingingDoorVC(nibName: nil, bundle: nil)
     ].reversed()
     
     override func viewDidLoad() {
