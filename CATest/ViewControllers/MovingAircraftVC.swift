@@ -9,28 +9,21 @@
 import Foundation
 import UIKit
 
-class AircraftVC: UIViewController {
-    lazy var button = UIButton(label: "animate")
+class AircraftVC: ButtonVC {
     lazy var shipLayer = CALayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(button)
-        button.autoCenterInSuperview()
-        button.addTarget(self, action: #selector(animate), for: .touchUpInside)
         
         shipLayer.frame = CGRect(x: 0, y: 0, width: 66, height: 44)
         shipLayer.position = CGPoint(x: 33, y: 150)
         shipLayer.contents = UIImage(named: "aircraft")?.cgImage
         view.layer.addSublayer(shipLayer)
     }
-    
-    @objc func animate() {
-        
-    }
 }
 
 class MovingAircraftVC: AircraftVC {
+    let animationKey = "moving"
     lazy var path = UIBezierPath()
     
     override func viewDidLoad() {
@@ -52,6 +45,6 @@ class MovingAircraftVC: AircraftVC {
         animation.duration = 4
         animation.path = path.cgPath
         animation.rotationMode = .rotateAuto
-        shipLayer.add(animation, forKey: nil)
+        shipLayer.add(animation, forKey: animationKey)
     }
 }

@@ -28,6 +28,7 @@
 		BC7B74E224F894A500913A19 /* TransitionUIKitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74E124F894A500913A19 /* TransitionUIKitVC.swift */; };
 		BC7B74E424F8971200913A19 /* ButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74E324F8971200913A19 /* ButtonVC.swift */; };
 		BC7B74E624F8979700913A19 /* RenderInContextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74E524F8979700913A19 /* RenderInContextVC.swift */; };
+		BC7B74E824F89A6600913A19 /* CancellableAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74E724F89A6600913A19 /* CancellableAnimationVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		BC7B74E124F894A500913A19 /* TransitionUIKitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionUIKitVC.swift; sourceTree = "<group>"; };
 		BC7B74E324F8971200913A19 /* ButtonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonVC.swift; sourceTree = "<group>"; };
 		BC7B74E524F8979700913A19 /* RenderInContextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderInContextVC.swift; sourceTree = "<group>"; };
+		BC7B74E724F89A6600913A19 /* CancellableAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellableAnimationVC.swift; sourceTree = "<group>"; };
 		C3FE258FCE4E6C6C51C46D7A /* Pods-CATest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CATest.release.xcconfig"; path = "Target Support Files/Pods-CATest/Pods-CATest.release.xcconfig"; sourceTree = "<group>"; };
 		C8CA5ADF99E786916ACB5C0B /* Pods_CATest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CATest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -137,6 +139,7 @@
 				BC7B74DF24F8924D00913A19 /* TransitionTabBarVC.swift */,
 				BC7B74E124F894A500913A19 /* TransitionUIKitVC.swift */,
 				BC7B74E524F8979700913A19 /* RenderInContextVC.swift */,
+				BC7B74E724F89A6600913A19 /* CancellableAnimationVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				BC7B74E024F8924D00913A19 /* TransitionTabBarVC.swift in Sources */,
 				BC7B74DC24F7D01500913A19 /* AnimationGroupVC.swift in Sources */,
 				BC7B74D524F7A5C300913A19 /* KeyframeAnimationsVC.swift in Sources */,
+				BC7B74E824F89A6600913A19 /* CancellableAnimationVC.swift in Sources */,
 				BC7B74CA24F7955300913A19 /* UsingPresentationLayerVC.swift in Sources */,
 				BC7B74E224F894A500913A19 /* TransitionUIKitVC.swift in Sources */,
 				BC7B74DE24F88E3F00913A19 /* TransitionVC.swift in Sources */,
