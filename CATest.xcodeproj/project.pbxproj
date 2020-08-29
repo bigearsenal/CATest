@@ -32,6 +32,7 @@
 		BC7B74EA24F89C6100913A19 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74E924F89C6100913A19 /* TableViewController.swift */; };
 		BC7B74EC24F8B25500913A19 /* SwingingDoorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74EB24F8B25500913A19 /* SwingingDoorVC.swift */; };
 		BC7B74F124F9EFF400913A19 /* TimeOffsetAndSpeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74F024F9EFF400913A19 /* TimeOffsetAndSpeedVC.swift */; };
+		BC7B74F324F9F53600913A19 /* PausingAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74F224F9F53600913A19 /* PausingAnimationVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		BC7B74E924F89C6100913A19 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		BC7B74EB24F8B25500913A19 /* SwingingDoorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwingingDoorVC.swift; sourceTree = "<group>"; };
 		BC7B74F024F9EFF400913A19 /* TimeOffsetAndSpeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOffsetAndSpeedVC.swift; sourceTree = "<group>"; };
+		BC7B74F224F9F53600913A19 /* PausingAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PausingAnimationVC.swift; sourceTree = "<group>"; };
 		C3FE258FCE4E6C6C51C46D7A /* Pods-CATest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CATest.release.xcconfig"; path = "Target Support Files/Pods-CATest/Pods-CATest.release.xcconfig"; sourceTree = "<group>"; };
 		C8CA5ADF99E786916ACB5C0B /* Pods_CATest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CATest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -149,6 +151,7 @@
 				BC7B74E724F89A6600913A19 /* CancellableAnimationVC.swift */,
 				BC7B74EB24F8B25500913A19 /* SwingingDoorVC.swift */,
 				BC7B74F024F9EFF400913A19 /* TimeOffsetAndSpeedVC.swift */,
+				BC7B74F224F9F53600913A19 /* PausingAnimationVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				BC38251224F6113200DF80DB /* SceneDelegate.swift in Sources */,
 				BC7B74CF24F79EE800913A19 /* DisableImplicitAnimsVC.swift in Sources */,
 				BC7B74F124F9EFF400913A19 /* TimeOffsetAndSpeedVC.swift in Sources */,
+				BC7B74F324F9F53600913A19 /* PausingAnimationVC.swift in Sources */,
 				BC7B74EA24F89C6100913A19 /* TableViewController.swift in Sources */,
 				BC7B74D924F7B02400913A19 /* VirtualPropertyAnimsVC.swift in Sources */,
 				BC7B74E624F8979700913A19 /* RenderInContextVC.swift in Sources */,

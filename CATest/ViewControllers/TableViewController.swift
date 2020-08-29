@@ -10,21 +10,22 @@ import UIKit
 
 class TableViewController: UITableViewController {
     lazy var viewControllers: [UIViewController] = [
-        LayerCustomTranstionVC(nibName: nil, bundle: nil),
-        DisableImplicitAnimsVC(nibName: nil, bundle: nil),
-        UsingPresentationLayerVC(nibName: nil, bundle: nil),
-        CAAnimationDelegateVC(nibName: nil, bundle: nil),
-        MovingAircraftVC(nibName: nil, bundle: nil),
-        TransitionVC(nibName: nil, bundle: nil),
-        KeyframeAnimationsVC(nibName: nil, bundle: nil),
-        VirtualPropertyAnimsVC(nibName: nil, bundle: nil),
-        AnimationGroupVC(nibName: nil, bundle: nil),
-        TranstionUIKitVC(nibName: nil, bundle: nil),
-        TransitionTabBarVC(nibName: nil, bundle: nil),
-        RenderInContextVC(nibName: nil, bundle: nil),
-        CancellableAnimationVC(nibName: nil, bundle: nil),
-        SwingingDoorVC(nibName: nil, bundle: nil),
-        TimeOffsetAndSpeedVC()
+        LayerCustomTranstionVC(),
+        DisableImplicitAnimsVC(),
+        UsingPresentationLayerVC(),
+        CAAnimationDelegateVC(),
+        MovingAircraftVC(),
+        TransitionVC(),
+        KeyframeAnimationsVC(),
+        VirtualPropertyAnimsVC(),
+        AnimationGroupVC(),
+        TranstionUIKitVC(),
+        TransitionTabBarVC(),
+        RenderInContextVC(),
+        CancellableAnimationVC(),
+        SwingingDoorVC(),
+        TimeOffsetAndSpeedVC(),
+        PausingAnimation()
     ].reversed()
     
     override func viewDidLoad() {

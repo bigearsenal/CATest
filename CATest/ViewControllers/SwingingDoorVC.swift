@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class SwingingDoorVC: UIViewController {
+    lazy var doorLayer = CALayer()
     override func viewDidLoad() {
         super.viewDidLoad()
         let behindTheDoorLayer = CALayer()
@@ -18,7 +19,6 @@ class SwingingDoorVC: UIViewController {
         behindTheDoorLayer.contents = UIImage(named: "behind-the-door")!.cgImage
         view.layer.addSublayer(behindTheDoorLayer)
         
-        let doorLayer = CALayer()
         doorLayer.frame = behindTheDoorLayer.frame
         doorLayer.position = CGPoint(x: behindTheDoorLayer.position.x - 64, y: behindTheDoorLayer.position.y)
         doorLayer.anchorPoint = CGPoint(x: 0, y: 0.5)
@@ -29,6 +29,10 @@ class SwingingDoorVC: UIViewController {
         perspective.m34 = -1/500
         view.layer.sublayerTransform = perspective
         
+        addAnimation()
+    }
+    
+    func addAnimation() {
         let animation = CABasicAnimation(keyPath: "transform.rotation.y")
         animation.toValue = -CGFloat.pi/2
         animation.duration = 2
