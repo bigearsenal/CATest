@@ -25,7 +25,9 @@ class TableViewController: UITableViewController {
         CancellableAnimationVC(),
         SwingingDoorVC(),
         TimeOffsetAndSpeedVC(),
-        PausingAnimation()
+        PausingAnimation(),
+        EasingAnimationVC(),
+        EasingKeyframeAnimationVC()
     ].reversed()
     
     override func viewDidLoad() {

@@ -40,11 +40,15 @@ class MovingAircraftVC: AircraftVC {
     }
     
     override func animate() {
+        shipLayer.add(createAnimation(), forKey: animationKey)
+    }
+    
+    func createAnimation() -> CAAnimation {
         // animation
         let animation = CAKeyframeAnimation(keyPath: "position")
         animation.duration = 4
         animation.path = path.cgPath
         animation.rotationMode = .rotateAuto
-        shipLayer.add(animation, forKey: animationKey)
+        return animation
     }
 }
