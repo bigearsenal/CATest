@@ -71,6 +71,34 @@ class LayerDrawingView: PathStrokeDrawingView {
     }
 }
 
+class ChalkBoardView: UIView {
+    lazy var strokes = [CGPoint]()
+    let brushSize: CGFloat = 32
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let point = touches.first!.location(in: self)
+        addBrushStroke(at: point)
+    }
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let point = touches.first!.location(in: self)
+        addBrushStroke(at: point)
+    }
+    
+    func addBrushStroke(at point: CGPoint) {
+        strokes.append(point)
+        
+        setNeedsDisplay()
+    }
+    
+    override func draw(_ rect: CGRect) {
+        for point in strokes {
+            let brushRect = CGRect(x: point.x - brushSize / 2, y: point.y - brushSize / 2, width: brushSize, height: brushSize)
+            UIImage(named: "Chalk")?.draw(in: brushRect)
+        }
+    }
+}
+
 class CustomDrawingVC<T: UIView>: UIViewController {
     // NOTE: background = UIColor.clearColor() was the reason why touchesBegan was not called. Its obviously not called on transparent elements.
     lazy var drawingView: T = {
@@ -87,5 +115,12 @@ class CustomDrawingVC<T: UIView>: UIViewController {
         
         drawingView.isUserInteractionEnabled = true
         
+    }
+}
+
+class ChalkBoardVC: CustomDrawingVC<ChalkBoardView> {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        drawingView.backgroundColor = .black
     }
 }
