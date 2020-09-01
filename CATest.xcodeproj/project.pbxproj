@@ -42,6 +42,8 @@
 		BCED3FCB24FE54B300187CF4 /* BouncingBallTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED3FCA24FE54B300187CF4 /* BouncingBallTimer.swift */; };
 		BCED3FCD24FE588700187CF4 /* BouncingBallCADisplayLinkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED3FCC24FE588700187CF4 /* BouncingBallCADisplayLinkVC.swift */; };
 		BCED3FCF24FE605100187CF4 /* CustomDrawingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED3FCE24FE605100187CF4 /* CustomDrawingVC.swift */; };
+		BCED3FD124FE6E3800187CF4 /* ChalkBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED3FD024FE6E3800187CF4 /* ChalkBoardVC.swift */; };
+		BCED3FD324FE6FA500187CF4 /* ChalkBoardReducingDrawingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED3FD224FE6FA500187CF4 /* ChalkBoardReducingDrawingVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +84,8 @@
 		BCED3FCA24FE54B300187CF4 /* BouncingBallTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouncingBallTimer.swift; sourceTree = "<group>"; };
 		BCED3FCC24FE588700187CF4 /* BouncingBallCADisplayLinkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouncingBallCADisplayLinkVC.swift; sourceTree = "<group>"; };
 		BCED3FCE24FE605100187CF4 /* CustomDrawingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDrawingVC.swift; sourceTree = "<group>"; };
+		BCED3FD024FE6E3800187CF4 /* ChalkBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChalkBoardVC.swift; sourceTree = "<group>"; };
+		BCED3FD224FE6FA500187CF4 /* ChalkBoardReducingDrawingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChalkBoardReducingDrawingVC.swift; sourceTree = "<group>"; };
 		C3FE258FCE4E6C6C51C46D7A /* Pods-CATest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CATest.release.xcconfig"; path = "Target Support Files/Pods-CATest/Pods-CATest.release.xcconfig"; sourceTree = "<group>"; };
 		C8CA5ADF99E786916ACB5C0B /* Pods_CATest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CATest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -179,6 +183,8 @@
 				BCED3FCA24FE54B300187CF4 /* BouncingBallTimer.swift */,
 				BCED3FCC24FE588700187CF4 /* BouncingBallCADisplayLinkVC.swift */,
 				BCED3FCE24FE605100187CF4 /* CustomDrawingVC.swift */,
+				BCED3FD024FE6E3800187CF4 /* ChalkBoardVC.swift */,
+				BCED3FD224FE6FA500187CF4 /* ChalkBoardReducingDrawingVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -315,8 +321,10 @@
 				BC7B74D124F7A07300913A19 /* CAAnimationDelegateVC.swift in Sources */,
 				BC38251224F6113200DF80DB /* SceneDelegate.swift in Sources */,
 				BC7B74CF24F79EE800913A19 /* DisableImplicitAnimsVC.swift in Sources */,
+				BCED3FD124FE6E3800187CF4 /* ChalkBoardVC.swift in Sources */,
 				BCED3FCD24FE588700187CF4 /* BouncingBallCADisplayLinkVC.swift in Sources */,
 				BC7B74F124F9EFF400913A19 /* TimeOffsetAndSpeedVC.swift in Sources */,
+				BCED3FD324FE6FA500187CF4 /* ChalkBoardReducingDrawingVC.swift in Sources */,
 				BCED3FCB24FE54B300187CF4 /* BouncingBallTimer.swift in Sources */,
 				BC7B74F324F9F53600913A19 /* PausingAnimationVC.swift in Sources */,
 				BCED3FBD24FB883A00187CF4 /* BoucingBallVC.swift in Sources */,
