@@ -31,7 +31,9 @@ class TableViewController: UITableViewController {
         ClockVC(),
         BoucingBallVC(),
         BouncingBall2VC(),
-        BouncingFunctionVC()
+        BouncingFunctionVC(),
+        BouncingBallTimer(),
+        BouncingBallCADisplayLink()
     ].reversed()
     
     override func viewDidLoad() {

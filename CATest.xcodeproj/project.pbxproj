@@ -39,6 +39,8 @@
 		BCED3FBD24FB883A00187CF4 /* BoucingBallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED3FBC24FB883A00187CF4 /* BoucingBallVC.swift */; };
 		BCED3FC724FDF06600187CF4 /* BouncingBall2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED3FC624FDF06600187CF4 /* BouncingBall2VC.swift */; };
 		BCED3FC924FDF3F000187CF4 /* BouncingFunctionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED3FC824FDF3F000187CF4 /* BouncingFunctionVC.swift */; };
+		BCED3FCB24FE54B300187CF4 /* BouncingBallTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED3FCA24FE54B300187CF4 /* BouncingBallTimer.swift */; };
+		BCED3FCD24FE588700187CF4 /* BouncingBallCADisplayLinkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED3FCC24FE588700187CF4 /* BouncingBallCADisplayLinkVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +78,8 @@
 		BCED3FBC24FB883A00187CF4 /* BoucingBallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoucingBallVC.swift; sourceTree = "<group>"; };
 		BCED3FC624FDF06600187CF4 /* BouncingBall2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouncingBall2VC.swift; sourceTree = "<group>"; };
 		BCED3FC824FDF3F000187CF4 /* BouncingFunctionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouncingFunctionVC.swift; sourceTree = "<group>"; };
+		BCED3FCA24FE54B300187CF4 /* BouncingBallTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouncingBallTimer.swift; sourceTree = "<group>"; };
+		BCED3FCC24FE588700187CF4 /* BouncingBallCADisplayLinkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouncingBallCADisplayLinkVC.swift; sourceTree = "<group>"; };
 		C3FE258FCE4E6C6C51C46D7A /* Pods-CATest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CATest.release.xcconfig"; path = "Target Support Files/Pods-CATest/Pods-CATest.release.xcconfig"; sourceTree = "<group>"; };
 		C8CA5ADF99E786916ACB5C0B /* Pods_CATest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CATest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -170,6 +174,8 @@
 				BCED3FBC24FB883A00187CF4 /* BoucingBallVC.swift */,
 				BCED3FC624FDF06600187CF4 /* BouncingBall2VC.swift */,
 				BCED3FC824FDF3F000187CF4 /* BouncingFunctionVC.swift */,
+				BCED3FCA24FE54B300187CF4 /* BouncingBallTimer.swift */,
+				BCED3FCC24FE588700187CF4 /* BouncingBallCADisplayLinkVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -306,7 +312,9 @@
 				BC7B74D124F7A07300913A19 /* CAAnimationDelegateVC.swift in Sources */,
 				BC38251224F6113200DF80DB /* SceneDelegate.swift in Sources */,
 				BC7B74CF24F79EE800913A19 /* DisableImplicitAnimsVC.swift in Sources */,
+				BCED3FCD24FE588700187CF4 /* BouncingBallCADisplayLinkVC.swift in Sources */,
 				BC7B74F124F9EFF400913A19 /* TimeOffsetAndSpeedVC.swift in Sources */,
+				BCED3FCB24FE54B300187CF4 /* BouncingBallTimer.swift in Sources */,
 				BC7B74F324F9F53600913A19 /* PausingAnimationVC.swift in Sources */,
 				BCED3FBD24FB883A00187CF4 /* BoucingBallVC.swift in Sources */,
 				BC7B74EA24F89C6100913A19 /* TableViewController.swift in Sources */,
