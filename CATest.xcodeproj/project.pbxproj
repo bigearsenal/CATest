@@ -37,6 +37,8 @@
 		BCED3FB924FB669700187CF4 /* EasingKeyframeAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED3FB824FB669700187CF4 /* EasingKeyframeAnimationVC.swift */; };
 		BCED3FBB24FB6B1800187CF4 /* ClockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED3FBA24FB6B1800187CF4 /* ClockVC.swift */; };
 		BCED3FBD24FB883A00187CF4 /* BoucingBallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED3FBC24FB883A00187CF4 /* BoucingBallVC.swift */; };
+		BCED3FC724FDF06600187CF4 /* BouncingBall2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED3FC624FDF06600187CF4 /* BouncingBall2VC.swift */; };
+		BCED3FC924FDF3F000187CF4 /* BouncingFunctionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED3FC824FDF3F000187CF4 /* BouncingFunctionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +74,8 @@
 		BCED3FB824FB669700187CF4 /* EasingKeyframeAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasingKeyframeAnimationVC.swift; sourceTree = "<group>"; };
 		BCED3FBA24FB6B1800187CF4 /* ClockVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockVC.swift; sourceTree = "<group>"; };
 		BCED3FBC24FB883A00187CF4 /* BoucingBallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoucingBallVC.swift; sourceTree = "<group>"; };
+		BCED3FC624FDF06600187CF4 /* BouncingBall2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouncingBall2VC.swift; sourceTree = "<group>"; };
+		BCED3FC824FDF3F000187CF4 /* BouncingFunctionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouncingFunctionVC.swift; sourceTree = "<group>"; };
 		C3FE258FCE4E6C6C51C46D7A /* Pods-CATest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CATest.release.xcconfig"; path = "Target Support Files/Pods-CATest/Pods-CATest.release.xcconfig"; sourceTree = "<group>"; };
 		C8CA5ADF99E786916ACB5C0B /* Pods_CATest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CATest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -164,6 +168,8 @@
 				BCED3FB824FB669700187CF4 /* EasingKeyframeAnimationVC.swift */,
 				BCED3FBA24FB6B1800187CF4 /* ClockVC.swift */,
 				BCED3FBC24FB883A00187CF4 /* BoucingBallVC.swift */,
+				BCED3FC624FDF06600187CF4 /* BouncingBall2VC.swift */,
+				BCED3FC824FDF3F000187CF4 /* BouncingFunctionVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -286,6 +292,7 @@
 				BC7B74CD24F79D3D00913A19 /* Extensions.swift in Sources */,
 				BC38251424F6113200DF80DB /* LayerCustomTranstionVC.swift in Sources */,
 				BC38251024F6113200DF80DB /* AppDelegate.swift in Sources */,
+				BCED3FC724FDF06600187CF4 /* BouncingBall2VC.swift in Sources */,
 				BC7B74E024F8924D00913A19 /* TransitionTabBarVC.swift in Sources */,
 				BC7B74DC24F7D01500913A19 /* AnimationGroupVC.swift in Sources */,
 				BC7B74D524F7A5C300913A19 /* KeyframeAnimationsVC.swift in Sources */,
@@ -293,6 +300,7 @@
 				BC7B74E824F89A6600913A19 /* CancellableAnimationVC.swift in Sources */,
 				BC7B74CA24F7955300913A19 /* UsingPresentationLayerVC.swift in Sources */,
 				BC7B74E224F894A500913A19 /* TransitionUIKitVC.swift in Sources */,
+				BCED3FC924FDF3F000187CF4 /* BouncingFunctionVC.swift in Sources */,
 				BC7B74DE24F88E3F00913A19 /* TransitionVC.swift in Sources */,
 				BCED3FB724FB64BE00187CF4 /* EasingAnimationVC.swift in Sources */,
 				BC7B74D124F7A07300913A19 /* CAAnimationDelegateVC.swift in Sources */,

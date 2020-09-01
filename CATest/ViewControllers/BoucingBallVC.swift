@@ -25,6 +25,11 @@ class BoucingBallVC: UIViewController {
     
     @objc func animate() {
         ballView.center = CGPoint(x: 150, y: 32)
+        ballView.layer.position = CGPoint(x: 150, y: 268)
+        ballView.layer.add(createAnimation(), forKey: nil)
+    }
+    
+    func createAnimation() -> CAKeyframeAnimation {
         let animation = CAKeyframeAnimation(keyPath: "position")
         animation.duration = 1
         animation.values = [
@@ -51,8 +56,6 @@ class BoucingBallVC: UIViewController {
         ]
         
         animation.keyTimes = [0, 0.3, 0.5, 0.7, 0.8, 0.9, 0.95, 1]
-        
-        ballView.layer.position = CGPoint(x: 150, y: 268)
-        ballView.layer.add(animation, forKey: nil)
+        return animation
     }
 }

@@ -29,7 +29,9 @@ class TableViewController: UITableViewController {
         EasingAnimationVC(),
         EasingKeyframeAnimationVC(),
         ClockVC(),
-        BoucingBallVC()
+        BoucingBallVC(),
+        BouncingBall2VC(),
+        BouncingFunctionVC()
     ].reversed()
     
     override func viewDidLoad() {
