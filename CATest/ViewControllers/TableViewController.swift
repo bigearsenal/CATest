@@ -33,7 +33,8 @@ class TableViewController: UITableViewController {
         BouncingBall2VC(),
         BouncingFunctionVC(),
         BouncingBallTimer(),
-        BouncingBallCADisplayLink()
+        BouncingBallCADisplayLink(),
+        CustomDrawingVC()
     ].reversed()
     
     override func viewDidLoad() {
