@@ -34,7 +34,8 @@ class TableViewController: UITableViewController {
         BouncingFunctionVC(),
         BouncingBallTimer(),
         BouncingBallCADisplayLink(),
-        CustomDrawingVC()
+        CustomDrawingVC<PathStrokeDrawingView>(),
+        CustomDrawingVC<LayerDrawingView>()
     ].reversed()
     
     override func viewDidLoad() {
