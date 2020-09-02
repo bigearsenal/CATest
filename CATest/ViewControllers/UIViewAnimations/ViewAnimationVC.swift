@@ -24,6 +24,8 @@ class ViewAnimationVC: UIViewController {
         stackView.addArrangedSubview(contentView)
         stackView.addArrangedSubview(button)
         
+        contentView.widthAnchor.constraint(equalTo: stackView.widthAnchor).isActive = true
+        
         button.setContentHuggingPriority(.required, for: .vertical)
         
         button.addTarget(self, action: #selector(buttonAnimateDidTouch), for: .touchUpInside)
