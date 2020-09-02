@@ -36,6 +36,7 @@
 		BCC60A9B24FF7B02003B094C /* Vacation Photos in Resources */ = {isa = PBXBuildFile; fileRef = BCC60A9A24FF7B02003B094C /* Vacation Photos */; };
 		BCC60A9E24FF7B31003B094C /* ImageCarouselVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC60A9D24FF7B31003B094C /* ImageCarouselVC.swift */; };
 		BCC60AA124FF8C5D003B094C /* CrossfadingAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC60AA024FF8C5D003B094C /* CrossfadingAnimationVC.swift */; };
+		BCC60AA424FF908F003B094C /* ViewAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC60AA324FF908F003B094C /* ViewAnimationVC.swift */; };
 		BCED3FB724FB64BE00187CF4 /* EasingAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED3FB624FB64BE00187CF4 /* EasingAnimationVC.swift */; };
 		BCED3FB924FB669700187CF4 /* EasingKeyframeAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED3FB824FB669700187CF4 /* EasingKeyframeAnimationVC.swift */; };
 		BCED3FBB24FB6B1800187CF4 /* ClockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED3FBA24FB6B1800187CF4 /* ClockVC.swift */; };
@@ -81,6 +82,7 @@
 		BCC60A9A24FF7B02003B094C /* Vacation Photos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Vacation Photos"; sourceTree = "<group>"; };
 		BCC60A9D24FF7B31003B094C /* ImageCarouselVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselVC.swift; sourceTree = "<group>"; };
 		BCC60AA024FF8C5D003B094C /* CrossfadingAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossfadingAnimationVC.swift; sourceTree = "<group>"; };
+		BCC60AA324FF908F003B094C /* ViewAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimationVC.swift; sourceTree = "<group>"; };
 		BCED3FB624FB64BE00187CF4 /* EasingAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasingAnimationVC.swift; sourceTree = "<group>"; };
 		BCED3FB824FB669700187CF4 /* EasingKeyframeAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasingKeyframeAnimationVC.swift; sourceTree = "<group>"; };
 		BCED3FBA24FB6B1800187CF4 /* ClockVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockVC.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 		BCC60A9F24FF8C1C003B094C /* UIViewAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				BCC60AA324FF908F003B094C /* ViewAnimationVC.swift */,
 				BCC60AA024FF8C5D003B094C /* CrossfadingAnimationVC.swift */,
 			);
 			path = UIViewAnimations;
@@ -366,6 +369,7 @@
 				BC7B74EA24F89C6100913A19 /* TableViewController.swift in Sources */,
 				BC7B74D924F7B02400913A19 /* VirtualPropertyAnimsVC.swift in Sources */,
 				BC7B74E624F8979700913A19 /* RenderInContextVC.swift in Sources */,
+				BCC60AA424FF908F003B094C /* ViewAnimationVC.swift in Sources */,
 				BC7B74D724F7A7C200913A19 /* MovingAircraftVC.swift in Sources */,
 				BCED3FBB24FB6B1800187CF4 /* ClockVC.swift in Sources */,
 				BC7B74E424F8971200913A19 /* ButtonVC.swift in Sources */,

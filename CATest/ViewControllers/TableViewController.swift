@@ -42,7 +42,7 @@ class TableViewController: UITableViewController {
             ImageCarouselVC()
         ].reversed()),
         ("View animations", [
-            
+            CrossfadingAnimationVC()
         ].reversed())
     ].reversed()
     
