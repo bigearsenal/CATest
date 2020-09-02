@@ -37,6 +37,7 @@
 		BCC60A9E24FF7B31003B094C /* ImageCarouselVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC60A9D24FF7B31003B094C /* ImageCarouselVC.swift */; };
 		BCC60AA124FF8C5D003B094C /* CrossfadingAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC60AA024FF8C5D003B094C /* CrossfadingAnimationVC.swift */; };
 		BCC60AA424FF908F003B094C /* ViewAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC60AA324FF908F003B094C /* ViewAnimationVC.swift */; };
+		BCC60AA624FF940D003B094C /* CubeTransitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC60AA524FF940D003B094C /* CubeTransitionVC.swift */; };
 		BCED3FB724FB64BE00187CF4 /* EasingAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED3FB624FB64BE00187CF4 /* EasingAnimationVC.swift */; };
 		BCED3FB924FB669700187CF4 /* EasingKeyframeAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED3FB824FB669700187CF4 /* EasingKeyframeAnimationVC.swift */; };
 		BCED3FBB24FB6B1800187CF4 /* ClockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED3FBA24FB6B1800187CF4 /* ClockVC.swift */; };
@@ -83,6 +84,7 @@
 		BCC60A9D24FF7B31003B094C /* ImageCarouselVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselVC.swift; sourceTree = "<group>"; };
 		BCC60AA024FF8C5D003B094C /* CrossfadingAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossfadingAnimationVC.swift; sourceTree = "<group>"; };
 		BCC60AA324FF908F003B094C /* ViewAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimationVC.swift; sourceTree = "<group>"; };
+		BCC60AA524FF940D003B094C /* CubeTransitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeTransitionVC.swift; sourceTree = "<group>"; };
 		BCED3FB624FB64BE00187CF4 /* EasingAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasingAnimationVC.swift; sourceTree = "<group>"; };
 		BCED3FB824FB669700187CF4 /* EasingKeyframeAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasingKeyframeAnimationVC.swift; sourceTree = "<group>"; };
 		BCED3FBA24FB6B1800187CF4 /* ClockVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockVC.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 			children = (
 				BCC60AA324FF908F003B094C /* ViewAnimationVC.swift */,
 				BCC60AA024FF8C5D003B094C /* CrossfadingAnimationVC.swift */,
+				BCC60AA524FF940D003B094C /* CubeTransitionVC.swift */,
 			);
 			path = UIViewAnimations;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				BC7B74D524F7A5C300913A19 /* KeyframeAnimationsVC.swift in Sources */,
 				BC7B74EC24F8B25500913A19 /* SwingingDoorVC.swift in Sources */,
 				BC7B74E824F89A6600913A19 /* CancellableAnimationVC.swift in Sources */,
+				BCC60AA624FF940D003B094C /* CubeTransitionVC.swift in Sources */,
 				BC7B74CA24F7955300913A19 /* UsingPresentationLayerVC.swift in Sources */,
 				BC7B74E224F894A500913A19 /* TransitionUIKitVC.swift in Sources */,
 				BCED3FC924FDF3F000187CF4 /* BouncingFunctionVC.swift in Sources */,
