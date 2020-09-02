@@ -37,7 +37,8 @@ class TableViewController: UITableViewController {
         CustomDrawingVC<PathStrokeDrawingView>(),
         CustomDrawingVC<LayerDrawingView>(),
         ChalkBoardVC(),
-        ChalkBoardReducingDrawingVC()
+        ChalkBoardReducingDrawingVC(),
+        ImageCarouselVC()
     ].reversed()
     
     override func viewDidLoad() {
