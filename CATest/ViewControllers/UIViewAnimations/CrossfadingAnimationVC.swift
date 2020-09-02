@@ -23,8 +23,9 @@ class CrossfadingAnimationVC: ViewAnimationVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(imageView)
+        contentView.addSubview(imageView)
         imageView.autoPinEdgesToSuperviewEdges()
+        imageView.setContentCompressionResistancePriority(.required, for: .vertical)
     }
     
     override func resetState() {

@@ -43,7 +43,8 @@ class TableViewController: UITableViewController {
         ].reversed()),
         ("View animations", [
             CrossfadingAnimationVC(),
-            CubeTransitionVC()
+            CubeTransitionVC(),
+            ViewKeyframeAnimationVC()
         ].reversed())
     ].reversed()
     

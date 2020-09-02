@@ -68,7 +68,7 @@ class CubeTransitionVC: ViewAnimationVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(label)
+        contentView.addSubview(label)
         label.autoCenterInSuperview()
     }
     
