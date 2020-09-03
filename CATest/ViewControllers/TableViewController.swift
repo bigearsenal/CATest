@@ -45,7 +45,10 @@ class TableViewController: UITableViewController {
             CrossfadingAnimationVC(),
             CubeTransitionVC(),
             ViewKeyframeAnimationVC()
-        ].reversed())
+        ].reversed()),
+        ("ViewController Transition", [
+            VinylPlayerVC()
+        ])
     ].reversed()
     
     override func viewDidLoad() {

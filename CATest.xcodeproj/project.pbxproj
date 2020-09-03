@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B53C5286AE53020DFC2EE153 /* Pods_CATest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CA5ADF99E786916ACB5C0B /* Pods_CATest.framework */; };
+		BC27040C2500DBDC0042A29B /* VinylPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC27040B2500DBDC0042A29B /* VinylPlayerVC.swift */; };
+		BC27040E2500E7890042A29B /* VinylSongDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC27040D2500E7890042A29B /* VinylSongDetailVC.swift */; };
 		BC38251024F6113200DF80DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC38250F24F6113200DF80DB /* AppDelegate.swift */; };
 		BC38251224F6113200DF80DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC38251124F6113200DF80DB /* SceneDelegate.swift */; };
 		BC38251424F6113200DF80DB /* LayerCustomTranstionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC38251324F6113200DF80DB /* LayerCustomTranstionVC.swift */; };
@@ -54,6 +56,8 @@
 
 /* Begin PBXFileReference section */
 		69DC3E8BFCB1622B142DB5FB /* Pods-CATest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CATest.debug.xcconfig"; path = "Target Support Files/Pods-CATest/Pods-CATest.debug.xcconfig"; sourceTree = "<group>"; };
+		BC27040B2500DBDC0042A29B /* VinylPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VinylPlayerVC.swift; sourceTree = "<group>"; };
+		BC27040D2500E7890042A29B /* VinylSongDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VinylSongDetailVC.swift; sourceTree = "<group>"; };
 		BC38250C24F6113200DF80DB /* CATest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CATest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC38250F24F6113200DF80DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC38251124F6113200DF80DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +135,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BC27040A2500DBC20042A29B /* ViewControllerTransition */ = {
+			isa = PBXGroup;
+			children = (
+				BC27040B2500DBDC0042A29B /* VinylPlayerVC.swift */,
+				BC27040D2500E7890042A29B /* VinylSongDetailVC.swift */,
+			);
+			path = ViewControllerTransition;
+			sourceTree = "<group>";
+		};
 		BC38250324F6113200DF80DB = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				BC7B74E924F89C6100913A19 /* TableViewController.swift */,
+				BC27040A2500DBC20042A29B /* ViewControllerTransition */,
 				BCC60A9F24FF8C1C003B094C /* UIViewAnimations */,
 				BCC60AA224FF8E0E003B094C /* LayerAnimations */,
 			);
@@ -357,6 +371,7 @@
 				BC7B74EC24F8B25500913A19 /* SwingingDoorVC.swift in Sources */,
 				BC7B74E824F89A6600913A19 /* CancellableAnimationVC.swift in Sources */,
 				BCC60AA624FF940D003B094C /* CubeTransitionVC.swift in Sources */,
+				BC27040C2500DBDC0042A29B /* VinylPlayerVC.swift in Sources */,
 				BC7B74CA24F7955300913A19 /* UsingPresentationLayerVC.swift in Sources */,
 				BC7B74E224F894A500913A19 /* TransitionUIKitVC.swift in Sources */,
 				BCED3FC924FDF3F000187CF4 /* BouncingFunctionVC.swift in Sources */,
@@ -377,6 +392,7 @@
 				BC7B74EA24F89C6100913A19 /* TableViewController.swift in Sources */,
 				BC7B74D924F7B02400913A19 /* VirtualPropertyAnimsVC.swift in Sources */,
 				BC7B74E624F8979700913A19 /* RenderInContextVC.swift in Sources */,
+				BC27040E2500E7890042A29B /* VinylSongDetailVC.swift in Sources */,
 				BCC60AA424FF908F003B094C /* ViewAnimationVC.swift in Sources */,
 				BC7B74D724F7A7C200913A19 /* MovingAircraftVC.swift in Sources */,
 				BCED3FBB24FB6B1800187CF4 /* ClockVC.swift in Sources */,
