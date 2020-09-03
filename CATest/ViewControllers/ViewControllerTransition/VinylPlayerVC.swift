@@ -126,14 +126,14 @@ class PresentingAnimator: NSObject, UIViewControllerAnimatedTransitioning {
             destinationVinylDisk.frame = destinationVinylDiskFrame
             destinationTitleLabel.frame = destinationTitleLabelFrame
             destinationSubtitleLabel.frame = destinationSubtitleLabelFrame
-            fromVC.view.alpha = 0
+            nc.view.alpha = 0
         }) { (_) in
             destinationVinylDisk.removeFromSuperview()
             transitionContext.completeTransition(true)
             fromVC.vinylDisk.alpha = 1
             fromVC.titleLabel.alpha = 1
             fromVC.subtitleLabel.alpha = 1
-            fromVC.view.alpha = 1
+            nc.view.alpha = 1
             toVC.vinylDisk.alpha = 1
             toVC.titleLabel.alpha = 1
             toVC.subtitleLabel.alpha = 1
