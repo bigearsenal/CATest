@@ -35,6 +35,7 @@
 		BC7B74EC24F8B25500913A19 /* SwingingDoorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74EB24F8B25500913A19 /* SwingingDoorVC.swift */; };
 		BC7B74F124F9EFF400913A19 /* TimeOffsetAndSpeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74F024F9EFF400913A19 /* TimeOffsetAndSpeedVC.swift */; };
 		BC7B74F324F9F53600913A19 /* PausingAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74F224F9F53600913A19 /* PausingAnimationVC.swift */; };
+		BCACA37025022972004D8DC1 /* SplashRevealVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCACA36F25022972004D8DC1 /* SplashRevealVC.swift */; };
 		BCC60A9B24FF7B02003B094C /* Vacation Photos in Resources */ = {isa = PBXBuildFile; fileRef = BCC60A9A24FF7B02003B094C /* Vacation Photos */; };
 		BCC60A9E24FF7B31003B094C /* ImageCarouselVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC60A9D24FF7B31003B094C /* ImageCarouselVC.swift */; };
 		BCC60AA124FF8C5D003B094C /* CrossfadingAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC60AA024FF8C5D003B094C /* CrossfadingAnimationVC.swift */; };
@@ -85,6 +86,7 @@
 		BC7B74EB24F8B25500913A19 /* SwingingDoorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwingingDoorVC.swift; sourceTree = "<group>"; };
 		BC7B74F024F9EFF400913A19 /* TimeOffsetAndSpeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOffsetAndSpeedVC.swift; sourceTree = "<group>"; };
 		BC7B74F224F9F53600913A19 /* PausingAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PausingAnimationVC.swift; sourceTree = "<group>"; };
+		BCACA36F25022972004D8DC1 /* SplashRevealVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRevealVC.swift; sourceTree = "<group>"; };
 		BCC60A9A24FF7B02003B094C /* Vacation Photos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Vacation Photos"; sourceTree = "<group>"; };
 		BCC60A9D24FF7B31003B094C /* ImageCarouselVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselVC.swift; sourceTree = "<group>"; };
 		BCC60AA024FF8C5D003B094C /* CrossfadingAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossfadingAnimationVC.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			children = (
 				BC27040B2500DBDC0042A29B /* VinylPlayerVC.swift */,
 				BC27040D2500E7890042A29B /* VinylSongDetailVC.swift */,
+				BCACA36F25022972004D8DC1 /* SplashRevealVC.swift */,
 			);
 			path = ViewControllerTransition;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				BCED3FD124FE6E3800187CF4 /* ChalkBoardVC.swift in Sources */,
 				BCED3FCD24FE588700187CF4 /* BouncingBallCADisplayLinkVC.swift in Sources */,
 				BC7B74F124F9EFF400913A19 /* TimeOffsetAndSpeedVC.swift in Sources */,
+				BCACA37025022972004D8DC1 /* SplashRevealVC.swift in Sources */,
 				BCED3FD324FE6FA500187CF4 /* ChalkBoardReducingDrawingVC.swift in Sources */,
 				BCED3FCB24FE54B300187CF4 /* BouncingBallTimer.swift in Sources */,
 				BC7B74F324F9F53600913A19 /* PausingAnimationVC.swift in Sources */,
