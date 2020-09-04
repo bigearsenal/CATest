@@ -75,10 +75,15 @@ extension VinylPlayerVC: UIViewControllerTransitioningDelegate {
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         PresentingAnimator()
     }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        DismissingAnimator()
+    }
 }
 
 class PresentingAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     let duration = 0.3
+    
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         guard let nc = transitionContext.viewController(forKey: .from) as? UINavigationController,
             let fromVC = nc.topViewController as? VinylPlayerVC,
@@ -129,6 +134,8 @@ class PresentingAnimator: NSObject, UIViewControllerAnimatedTransitioning {
             nc.view.alpha = 0
         }) { (_) in
             destinationVinylDisk.removeFromSuperview()
+            destinationTitleLabel.removeFromSuperview()
+            destinationSubtitleLabel.removeFromSuperview()
             transitionContext.completeTransition(true)
             fromVC.vinylDisk.alpha = 1
             fromVC.titleLabel.alpha = 1
@@ -151,5 +158,70 @@ class PresentingAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         print("[ANIMATION WARNING] Seems like this view is not in views hierarchy\n\(view)\nOriginal frame returned")
         return view.frame
     }
-    
+}
+
+class DismissingAnimator: PresentingAnimator {
+    override func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+        guard let fromVC = transitionContext.viewController(forKey: .from) as? VinylSongDetailVC,
+            let nc = transitionContext.viewController(forKey: .to) as? UINavigationController,
+            let toVC = nc.topViewController as? VinylPlayerVC
+        else {
+            transitionContext.completeTransition(true)
+            return
+        }
+        
+        // Prepare
+        let containerView = transitionContext.containerView
+        containerView.addSubview(nc.view)
+        containerView.sendSubviewToBack(nc.view)
+        
+        guard let destinationVinylDisk = toVC.vinylDisk.snapshotView(afterScreenUpdates: true),
+            let destinationTitleLabel = toVC.titleLabel.snapshotView(afterScreenUpdates: true),
+            let destinationSubtitleLabel = toVC.subtitleLabel.snapshotView(afterScreenUpdates: true)
+        else {
+            transitionContext.completeTransition(true)
+            return
+        }
+        
+        fromVC.vinylDisk.alpha = 0
+        fromVC.titleLabel.alpha = 0
+        fromVC.subtitleLabel.alpha = 0
+        toVC.vinylDisk.alpha = 0
+        toVC.titleLabel.alpha = 0
+        toVC.subtitleLabel.alpha = 0
+        
+        let relativeVinylDiskFrame = frameOfViewInWindowsCoordinateSystem(fromVC.vinylDisk)
+        let destinationVinylDiskFrame = frameOfViewInWindowsCoordinateSystem(toVC.vinylDisk)
+        destinationVinylDisk.frame = relativeVinylDiskFrame
+        containerView.addSubview(destinationVinylDisk)
+        
+        let relativeTitleLabelFrame = frameOfViewInWindowsCoordinateSystem(fromVC.titleLabel)
+        let destinationTitleLabelFrame = frameOfViewInWindowsCoordinateSystem(toVC.titleLabel)
+        destinationTitleLabel.frame = relativeTitleLabelFrame
+        containerView.addSubview(destinationTitleLabel)
+        
+        let relativeSubtitleLabelFrame = frameOfViewInWindowsCoordinateSystem(fromVC.subtitleLabel)
+        let destinationSubtitleLabelFrame = frameOfViewInWindowsCoordinateSystem(toVC.subtitleLabel)
+        destinationSubtitleLabel.frame = relativeSubtitleLabelFrame
+        containerView.addSubview(destinationSubtitleLabel)
+        
+        UIView.animate(withDuration: duration, animations: {
+            destinationVinylDisk.frame = destinationVinylDiskFrame
+            destinationTitleLabel.frame = destinationTitleLabelFrame
+            destinationSubtitleLabel.frame = destinationSubtitleLabelFrame
+            fromVC.view.alpha = 0
+        }) { (_) in
+            destinationVinylDisk.removeFromSuperview()
+            destinationTitleLabel.removeFromSuperview()
+            destinationSubtitleLabel.removeFromSuperview()
+            transitionContext.completeTransition(true)
+            fromVC.vinylDisk.alpha = 1
+            fromVC.titleLabel.alpha = 1
+            fromVC.subtitleLabel.alpha = 1
+            fromVC.view.alpha = 1
+            toVC.vinylDisk.alpha = 1
+            toVC.titleLabel.alpha = 1
+            toVC.subtitleLabel.alpha = 1
+        }
+    }
 }
