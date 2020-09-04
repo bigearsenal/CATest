@@ -29,20 +29,16 @@ class SplashRevealVC: UIViewController {
         button.autoAlignAxis(toSuperviewAxis: .vertical)
         button.addTarget(self, action: #selector(animate), for: .touchUpInside)
         
-        navigationController?.delegate = self
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        slashImageView.layer.removeAllAnimations()
-        
         let zoomAnim = CABasicAnimation(keyPath: "transform.scale")
         zoomAnim.fromValue = 1
         zoomAnim.toValue = 1.2
         zoomAnim.duration = 0.8
         zoomAnim.repeatCount = .infinity
         zoomAnim.autoreverses = true
+        zoomAnim.isRemovedOnCompletion = false
         slashImageView.layer.add(zoomAnim, forKey: "Loading")
+        
+        navigationController?.delegate = self
     }
     
     @objc func animate() {

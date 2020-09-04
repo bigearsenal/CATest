@@ -23,6 +23,7 @@ class VinylDiskVC: UIViewController {
         animation.toValue = CGFloat.pi * 2
         animation.duration = 3
         animation.repeatCount = .greatestFiniteMagnitude
+        animation.isRemovedOnCompletion = false
         vinylDisk.layer.add(animation, forKey: nil)
     }
 }
@@ -60,8 +61,6 @@ class VinylPlayerVC: VinylDiskVC {
         // animate vinyl disk
         rotateVinylDisk()
     }
-    
-    
     
     @objc func buttonListenDidTouch() {
         let vc = VinylSongDetailVC()
