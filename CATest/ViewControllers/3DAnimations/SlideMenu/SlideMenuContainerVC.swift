@@ -33,7 +33,7 @@ class SlideMenuContainerVC: BaseViewController {
         addChild(menuVC)
         view.addSubview(menuVC.view)
         menuVC.didMove(toParent: self)
-        
+        menuVC.view.layer.anchorPoint.x = 1
         menuVC.view.frame = CGRect(x: -menuWidth, y: 0, width: menuWidth, height: view.frame.height)
         
         menuVC.didSelectMenuItem = {item in
@@ -45,6 +45,8 @@ class SlideMenuContainerVC: BaseViewController {
         
         let panGesture = UIPanGestureRecognizer(target:self, action:#selector(handleGesture(_:)))
         view.addGestureRecognizer(panGesture)
+        
+        setMenu(toPercent: 0.0)
     }
     
     @objc func handleGesture(_ recognizer: UIPanGestureRecognizer) {
@@ -95,6 +97,20 @@ class SlideMenuContainerVC: BaseViewController {
     
     func setMenu(toPercent percent: CGFloat) {
         detailVC.view.frame.origin.x = menuWidth * CGFloat(percent)
-        menuVC.view.frame.origin.x = menuWidth * CGFloat(percent) - menuWidth
+        menuVC.view.layer.transform = menuTransform(percent: percent)
+        menuVC.view.alpha = CGFloat(max(0.2, percent))
+    }
+    
+    func menuTransform(percent: CGFloat) -> CATransform3D {
+        var identity = CATransform3DIdentity
+        identity.m34 = -1 / 1000
+        
+        let remainingPercent = 1 - percent
+        let angle = remainingPercent * .pi * -0.5
+        
+        let rotationTransform = CATransform3DRotate(identity, angle, 0, 1, 0)
+        let translationTranform = CATransform3DMakeTranslation(menuWidth * percent, 0, 0)
+        
+        return CATransform3DConcat(rotationTransform, translationTranform)
     }
 }
