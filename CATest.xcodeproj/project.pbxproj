@@ -38,6 +38,8 @@
 		BCACA37025022972004D8DC1 /* SplashRevealVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCACA36F25022972004D8DC1 /* SplashRevealVC.swift */; };
 		BCACA37625032D48004D8DC1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCACA37525032D48004D8DC1 /* BaseViewController.swift */; };
 		BCACA38025033328004D8DC1 /* UIViewPropertyAnimatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCACA37F25033328004D8DC1 /* UIViewPropertyAnimatorVC.swift */; };
+		BCACA382250337A3004D8DC1 /* UIViewPropertyAnimatorKeyframesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCACA381250337A3004D8DC1 /* UIViewPropertyAnimatorKeyframesVC.swift */; };
+		BCACA384250337F5004D8DC1 /* AnimatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCACA383250337F5004D8DC1 /* AnimatorFactory.swift */; };
 		BCC60A9B24FF7B02003B094C /* Vacation Photos in Resources */ = {isa = PBXBuildFile; fileRef = BCC60A9A24FF7B02003B094C /* Vacation Photos */; };
 		BCC60A9E24FF7B31003B094C /* ImageCarouselVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC60A9D24FF7B31003B094C /* ImageCarouselVC.swift */; };
 		BCC60AA124FF8C5D003B094C /* CrossfadingAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC60AA024FF8C5D003B094C /* CrossfadingAnimationVC.swift */; };
@@ -91,6 +93,8 @@
 		BCACA36F25022972004D8DC1 /* SplashRevealVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRevealVC.swift; sourceTree = "<group>"; };
 		BCACA37525032D48004D8DC1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		BCACA37F25033328004D8DC1 /* UIViewPropertyAnimatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewPropertyAnimatorVC.swift; sourceTree = "<group>"; };
+		BCACA381250337A3004D8DC1 /* UIViewPropertyAnimatorKeyframesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewPropertyAnimatorKeyframesVC.swift; sourceTree = "<group>"; };
+		BCACA383250337F5004D8DC1 /* AnimatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatorFactory.swift; sourceTree = "<group>"; };
 		BCC60A9A24FF7B02003B094C /* Vacation Photos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Vacation Photos"; sourceTree = "<group>"; };
 		BCC60A9D24FF7B31003B094C /* ImageCarouselVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselVC.swift; sourceTree = "<group>"; };
 		BCC60AA024FF8C5D003B094C /* CrossfadingAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossfadingAnimationVC.swift; sourceTree = "<group>"; };
@@ -201,7 +205,9 @@
 		BCACA37E25033306004D8DC1 /* UIViewPropertyAnimatorIOS10 */ = {
 			isa = PBXGroup;
 			children = (
+				BCACA383250337F5004D8DC1 /* AnimatorFactory.swift */,
 				BCACA37F25033328004D8DC1 /* UIViewPropertyAnimatorVC.swift */,
+				BCACA381250337A3004D8DC1 /* UIViewPropertyAnimatorKeyframesVC.swift */,
 			);
 			path = UIViewPropertyAnimatorIOS10;
 			sourceTree = "<group>";
@@ -379,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC7B74CD24F79D3D00913A19 /* Extensions.swift in Sources */,
+				BCACA384250337F5004D8DC1 /* AnimatorFactory.swift in Sources */,
 				BC38251424F6113200DF80DB /* LayerCustomTranstionVC.swift in Sources */,
 				BC38251024F6113200DF80DB /* AppDelegate.swift in Sources */,
 				BCED3FC724FDF06600187CF4 /* BouncingBall2VC.swift in Sources */,
@@ -397,6 +404,7 @@
 				BCC60AA824FF9BDC003B094C /* ViewKeyframeAnimationVC.swift in Sources */,
 				BC7B74DE24F88E3F00913A19 /* TransitionVC.swift in Sources */,
 				BCED3FB724FB64BE00187CF4 /* EasingAnimationVC.swift in Sources */,
+				BCACA382250337A3004D8DC1 /* UIViewPropertyAnimatorKeyframesVC.swift in Sources */,
 				BC7B74D124F7A07300913A19 /* CAAnimationDelegateVC.swift in Sources */,
 				BC38251224F6113200DF80DB /* SceneDelegate.swift in Sources */,
 				BC7B74CF24F79EE800913A19 /* DisableImplicitAnimsVC.swift in Sources */,

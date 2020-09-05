@@ -50,8 +50,9 @@ class TableViewController: UITableViewController {
             VinylPlayerVC.self,
             SplashRevealVC.self
         ].reversed()),
-        ("UIViewPropertyAnimator", [
+        ("UIViewPropertyAnimator (iOS 10)", [
             UIViewPropertyAnimatorVC.self,
+            UIViewPropertyAnimatorKeyframesVC.self
         ].reversed())
     ].reversed()
     
