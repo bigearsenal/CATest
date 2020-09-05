@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ImageCarouselVC: UIViewController, UICollectionViewDataSource {
+class ImageCarouselVC: BaseViewController, UICollectionViewDataSource {
     let imagePaths = Bundle.main.paths(forResourcesOfType: "png", inDirectory: "Vacation Photos")
     lazy var collectionView: UICollectionView = {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class VinylDiskVC: UIViewController {
+class VinylDiskVC: BaseViewController {
     lazy var vinylDisk: UIImageView = {
         let view = UIImageView(cornerRadius: 35, imageNamed: "vinyl")
         view.widthAnchor.constraint(equalTo: view.heightAnchor).isActive = true

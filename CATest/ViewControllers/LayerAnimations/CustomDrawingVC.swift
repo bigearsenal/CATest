@@ -71,7 +71,7 @@ class LayerDrawingView: PathStrokeDrawingView {
     }
 }
 
-class CustomDrawingVC<T: UIView>: UIViewController {
+class CustomDrawingVC<T: UIView>: BaseViewController {
     // NOTE: background = UIColor.clearColor() was the reason why touchesBegan was not called. Its obviously not called on transparent elements.
     lazy var drawingView: T = {
         let view = T(frame: .zero)

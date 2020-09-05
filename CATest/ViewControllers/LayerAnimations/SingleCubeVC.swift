@@ -9,7 +9,7 @@
 import Foundation
 import BEPureLayout
 
-class SingleCubeVC: UIViewController {
+class SingleCubeVC: BaseViewController {
     lazy var containerView = UIView(width: 400, height: 400, backgroundColor: .red)
     lazy var button = UIButton(label: "change color")
     lazy var myLayer = CALayer()

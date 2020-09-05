@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-class SplashRevealVC: UIViewController {
+class SplashRevealVC: BaseViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {.lightContent}
     
     lazy var slashImageView = UIImageView(width: 60, height: 130.5, imageNamed: "slash")

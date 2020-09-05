@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ClockVC: UIViewController {
+class ClockVC: BaseViewController {
     lazy var clockFace = UIView(width: 200, height: 200, cornerRadius: 100)
     lazy var hourHand = drawHand(size: 50, width: 5, color: .black)
     lazy var minuteHand = drawHand(size: 65, width: 3, color: .black)

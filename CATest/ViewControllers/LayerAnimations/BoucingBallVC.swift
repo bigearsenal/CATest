@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class BoucingBallVC: UIViewController {
+class BoucingBallVC: BaseViewController {
     lazy var ballView = UIView(width: 50, height: 50, backgroundColor: .red, cornerRadius: 25)
     
     override func viewDidLoad() {

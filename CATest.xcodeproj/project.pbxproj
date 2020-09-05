@@ -36,6 +36,7 @@
 		BC7B74F124F9EFF400913A19 /* TimeOffsetAndSpeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74F024F9EFF400913A19 /* TimeOffsetAndSpeedVC.swift */; };
 		BC7B74F324F9F53600913A19 /* PausingAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74F224F9F53600913A19 /* PausingAnimationVC.swift */; };
 		BCACA37025022972004D8DC1 /* SplashRevealVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCACA36F25022972004D8DC1 /* SplashRevealVC.swift */; };
+		BCACA37625032D48004D8DC1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCACA37525032D48004D8DC1 /* BaseViewController.swift */; };
 		BCC60A9B24FF7B02003B094C /* Vacation Photos in Resources */ = {isa = PBXBuildFile; fileRef = BCC60A9A24FF7B02003B094C /* Vacation Photos */; };
 		BCC60A9E24FF7B31003B094C /* ImageCarouselVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC60A9D24FF7B31003B094C /* ImageCarouselVC.swift */; };
 		BCC60AA124FF8C5D003B094C /* CrossfadingAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC60AA024FF8C5D003B094C /* CrossfadingAnimationVC.swift */; };
@@ -87,6 +88,7 @@
 		BC7B74F024F9EFF400913A19 /* TimeOffsetAndSpeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOffsetAndSpeedVC.swift; sourceTree = "<group>"; };
 		BC7B74F224F9F53600913A19 /* PausingAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PausingAnimationVC.swift; sourceTree = "<group>"; };
 		BCACA36F25022972004D8DC1 /* SplashRevealVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRevealVC.swift; sourceTree = "<group>"; };
+		BCACA37525032D48004D8DC1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		BCC60A9A24FF7B02003B094C /* Vacation Photos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Vacation Photos"; sourceTree = "<group>"; };
 		BCC60A9D24FF7B31003B094C /* ImageCarouselVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselVC.swift; sourceTree = "<group>"; };
 		BCC60AA024FF8C5D003B094C /* CrossfadingAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossfadingAnimationVC.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 		BC7B74CB24F7958700913A19 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				BCACA37525032D48004D8DC1 /* BaseViewController.swift */,
 				BC7B74E924F89C6100913A19 /* TableViewController.swift */,
 				BC27040A2500DBC20042A29B /* ViewControllerTransition */,
 				BCC60A9F24FF8C1C003B094C /* UIViewAnimations */,
@@ -369,6 +372,7 @@
 				BC38251024F6113200DF80DB /* AppDelegate.swift in Sources */,
 				BCED3FC724FDF06600187CF4 /* BouncingBall2VC.swift in Sources */,
 				BC7B74E024F8924D00913A19 /* TransitionTabBarVC.swift in Sources */,
+				BCACA37625032D48004D8DC1 /* BaseViewController.swift in Sources */,
 				BC7B74DC24F7D01500913A19 /* AnimationGroupVC.swift in Sources */,
 				BC7B74D524F7A5C300913A19 /* KeyframeAnimationsVC.swift in Sources */,
 				BC7B74EC24F8B25500913A19 /* SwingingDoorVC.swift in Sources */,

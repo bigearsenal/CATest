@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class UsingPresentationLayerVC: UIViewController {
+class UsingPresentationLayerVC: BaseViewController {
     lazy var myLayer = CALayer()
     
     override func viewDidLoad() {

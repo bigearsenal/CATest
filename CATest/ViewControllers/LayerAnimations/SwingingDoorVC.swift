@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class SwingingDoorVC: UIViewController {
+class SwingingDoorVC: BaseViewController {
     lazy var doorLayer = CALayer()
     override func viewDidLoad() {
         super.viewDidLoad()

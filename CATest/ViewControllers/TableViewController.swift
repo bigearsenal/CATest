@@ -9,51 +9,53 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-    lazy var viewControllers: [(String, [UIViewController])] = [
+    lazy var viewControllers: [(String, [BaseViewController.Type])] = [
         ("Layer animations", [
-            LayerCustomTranstionVC(),
-            DisableImplicitAnimsVC(),
-            UsingPresentationLayerVC(),
-            CAAnimationDelegateVC(),
-            MovingAircraftVC(),
-            TransitionVC(),
-            KeyframeAnimationsVC(),
-            VirtualPropertyAnimsVC(),
-            AnimationGroupVC(),
-            TranstionUIKitVC(),
-            TransitionTabBarVC(),
-            RenderInContextVC(),
-            CancellableAnimationVC(),
-            SwingingDoorVC(),
-            TimeOffsetAndSpeedVC(),
-            PausingAnimation(),
-            EasingAnimationVC(),
-            EasingKeyframeAnimationVC(),
-            ClockVC(),
-            BoucingBallVC(),
-            BouncingBall2VC(),
-            BouncingFunctionVC(),
-            BouncingBallTimer(),
-            BouncingBallCADisplayLink(),
-            CustomDrawingVC<PathStrokeDrawingView>(),
-            CustomDrawingVC<LayerDrawingView>(),
-            ChalkBoardVC(),
-            ChalkBoardReducingDrawingVC(),
-            ImageCarouselVC()
+            LayerCustomTranstionVC.self,
+            DisableImplicitAnimsVC.self,
+            UsingPresentationLayerVC.self,
+            CAAnimationDelegateVC.self,
+            MovingAircraftVC.self,
+            TransitionVC.self,
+            KeyframeAnimationsVC.self,
+            VirtualPropertyAnimsVC.self,
+            AnimationGroupVC.self,
+            TranstionUIKitVC.self,
+//            TransitionTabBarVC.self,
+            RenderInContextVC.self,
+            CancellableAnimationVC.self,
+            SwingingDoorVC.self,
+            TimeOffsetAndSpeedVC.self,
+            PausingAnimation.self,
+            EasingAnimationVC.self,
+            EasingKeyframeAnimationVC.self,
+            ClockVC.self,
+            BoucingBallVC.self,
+            BouncingBall2VC.self,
+            BouncingFunctionVC.self,
+            BouncingBallTimer.self,
+            BouncingBallCADisplayLink.self,
+            CustomDrawingVC<PathStrokeDrawingView>.self,
+            CustomDrawingVC<LayerDrawingView>.self,
+            ChalkBoardVC.self,
+            ChalkBoardReducingDrawingVC.self,
+            ImageCarouselVC.self
         ].reversed()),
         ("View animations", [
-            CrossfadingAnimationVC(),
-            CubeTransitionVC(),
-            ViewKeyframeAnimationVC()
+            CrossfadingAnimationVC.self,
+            CubeTransitionVC.self,
+            ViewKeyframeAnimationVC.self
         ].reversed()),
         ("ViewController Transition", [
-            VinylPlayerVC(),
-            SplashRevealVC()
-        ])
+            VinylPlayerVC.self,
+            SplashRevealVC.self
+        ].reversed())
     ].reversed()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "animations"
+        navigationController?.navigationBar.prefersLargeTitles = true
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
 
@@ -72,13 +74,13 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
         // Configure the cell...
-        cell.textLabel?.text = "\(type(of: viewControllers[indexPath.section].1[indexPath.row]).self)"
+        cell.textLabel?.text = "\(viewControllers[indexPath.section].1[indexPath.row])"
 
         return cell
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        show(viewControllers[indexPath.section].1[indexPath.row], sender: nil)
+        show(viewControllers[indexPath.section].1[indexPath.row].init(), sender: nil)
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

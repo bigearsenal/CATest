@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ButtonVC: UIViewController {
+class ButtonVC: BaseViewController {
     lazy var buttonStackView = UIStackView(axis: .horizontal, spacing: 16, alignment: .fill, distribution: .fill)
     lazy var animateButton = UIButton(label: "animate", textColor: .blue)
     
