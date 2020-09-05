@@ -55,7 +55,8 @@ class TableViewController: UITableViewController {
             UIViewPropertyAnimatorKeyframesVC.self,
             BlurAnimationVC.self,
             SpringAnimatorVC.self,
-            ConstraintAnimationVC.self
+            ConstraintAnimationVC.self,
+            ExpandableListVC.self
         ].reversed())
     ].reversed()
     

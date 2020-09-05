@@ -17,6 +17,7 @@
 		BC38251924F6113400DF80DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC38251824F6113400DF80DB /* Assets.xcassets */; };
 		BC38251C24F6113400DF80DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC38251A24F6113400DF80DB /* LaunchScreen.storyboard */; };
 		BC457A7E2503463F00B0B0F9 /* ConstraintAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC457A7D2503463F00B0B0F9 /* ConstraintAnimationVC.swift */; };
+		BC457A80250349C500B0B0F9 /* ExpandableListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC457A7F250349C500B0B0F9 /* ExpandableListVC.swift */; };
 		BC7B74CA24F7955300913A19 /* UsingPresentationLayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74C924F7955300913A19 /* UsingPresentationLayerVC.swift */; };
 		BC7B74CD24F79D3D00913A19 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74CC24F79D3D00913A19 /* Extensions.swift */; };
 		BC7B74CF24F79EE800913A19 /* DisableImplicitAnimsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74CE24F79EE800913A19 /* DisableImplicitAnimsVC.swift */; };
@@ -76,6 +77,7 @@
 		BC38251B24F6113400DF80DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC38251D24F6113400DF80DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC457A7D2503463F00B0B0F9 /* ConstraintAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintAnimationVC.swift; sourceTree = "<group>"; };
+		BC457A7F250349C500B0B0F9 /* ExpandableListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableListVC.swift; sourceTree = "<group>"; };
 		BC7B74C924F7955300913A19 /* UsingPresentationLayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingPresentationLayerVC.swift; sourceTree = "<group>"; };
 		BC7B74CC24F79D3D00913A19 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BC7B74CE24F79EE800913A19 /* DisableImplicitAnimsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableImplicitAnimsVC.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 				BCACA38525033AB7004D8DC1 /* BlurAnimationVC.swift */,
 				BCACA38925034188004D8DC1 /* SpringAnimatorVC.swift */,
 				BC457A7D2503463F00B0B0F9 /* ConstraintAnimationVC.swift */,
+				BC457A7F250349C500B0B0F9 /* ExpandableListVC.swift */,
 			);
 			path = UIViewPropertyAnimatorIOS10;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 				BCC60AA424FF908F003B094C /* ViewAnimationVC.swift in Sources */,
 				BC7B74D724F7A7C200913A19 /* MovingAircraftVC.swift in Sources */,
 				BCED3FBB24FB6B1800187CF4 /* ClockVC.swift in Sources */,
+				BC457A80250349C500B0B0F9 /* ExpandableListVC.swift in Sources */,
 				BC7B74E424F8971200913A19 /* ButtonVC.swift in Sources */,
 				BCC60A9E24FF7B31003B094C /* ImageCarouselVC.swift in Sources */,
 				BCED3FB924FB669700187CF4 /* EasingKeyframeAnimationVC.swift in Sources */,
