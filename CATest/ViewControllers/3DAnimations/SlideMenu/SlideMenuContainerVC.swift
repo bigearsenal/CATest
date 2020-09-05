@@ -60,7 +60,11 @@ class SlideMenuContainerVC: BaseViewController {
         case .began:
             let isOpen = floor(detailVC.view.frame.origin.x/menuWidth)
             isMenuOpen = isOpen == 1.0 ? false: true
-            
+            // Core Animation continually redraws all contents of the menu view controller and recalculates the perspective distortion for all elements as it moves, which isn’t terribly efficient — hence the jagged edges.
+            // It’s better to let Core Animation know that you won’t change the menu contents during the animation so that it can render the menu once and simply rotate the rendered and cached image.
+            menuVC.view.layer.shouldRasterize = true
+            menuVC.view.layer.rasterizationScale =
+            UIScreen.main.scale
         case .changed:
             setMenu(toPercent: isMenuOpen ? progress: (1.0 - progress))
             
@@ -80,7 +84,7 @@ class SlideMenuContainerVC: BaseViewController {
                             self.setMenu(toPercent: targetProgress)
             },
                            completion: {_ in
-                            
+                            self.menuVC.view.layer.shouldRasterize = false
             }
             )
             
