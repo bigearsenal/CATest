@@ -49,6 +49,9 @@ class TableViewController: UITableViewController {
         ("ViewController Transition", [
             VinylPlayerVC.self,
             SplashRevealVC.self
+        ].reversed()),
+        ("UIViewPropertyAnimator", [
+            UIViewPropertyAnimatorVC.self,
         ].reversed())
     ].reversed()
     
