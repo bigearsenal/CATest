@@ -13,7 +13,7 @@ class SlideMenuContainerVC: BaseViewController {
     let menuWidth: CGFloat = 80.0
     lazy var detailVC = VinylSongDetailVC()
     lazy var menuVC = SideMenuViewController()
-    lazy var menuButton = UIButton(label: "toggle menu", textColor: .red)
+    lazy var menuButton = UIButton(label: "+", labelFont: .systemFont(ofSize: 50), textColor: .blue)
     var isMenuOpen = false
     
     override func viewDidLoad() {
@@ -103,6 +103,7 @@ class SlideMenuContainerVC: BaseViewController {
         detailVC.view.frame.origin.x = menuWidth * CGFloat(percent)
         menuVC.view.layer.transform = menuTransform(percent: percent)
         menuVC.view.alpha = CGFloat(max(0.2, percent))
+        menuButton.layer.transform = buttonTransform(percent: percent)
     }
     
     func menuTransform(percent: CGFloat) -> CATransform3D {
@@ -116,5 +117,9 @@ class SlideMenuContainerVC: BaseViewController {
         let translationTranform = CATransform3DMakeTranslation(menuWidth * percent, 0, 0)
         
         return CATransform3DConcat(rotationTransform, translationTranform)
+    }
+    
+    func buttonTransform(percent: CGFloat) -> CATransform3D {
+        return CATransform3DMakeRotation(percent * .pi / 4, 0, 0, 1)
     }
 }
