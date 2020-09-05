@@ -57,6 +57,9 @@ class TableViewController: UITableViewController {
             SpringAnimatorVC.self,
             ConstraintAnimationVC.self,
             ExpandableListVC.self
+        ].reversed()),
+        ("3d animations", [
+            SlideMenuContainerVC.self
         ].reversed())
     ].reversed()
     

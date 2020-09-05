@@ -18,6 +18,9 @@
 		BC38251C24F6113400DF80DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC38251A24F6113400DF80DB /* LaunchScreen.storyboard */; };
 		BC457A7E2503463F00B0B0F9 /* ConstraintAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC457A7D2503463F00B0B0F9 /* ConstraintAnimationVC.swift */; };
 		BC457A80250349C500B0B0F9 /* ExpandableListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC457A7F250349C500B0B0F9 /* ExpandableListVC.swift */; };
+		BC457A862503C93E00B0B0F9 /* SlideMenuContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC457A852503C93E00B0B0F9 /* SlideMenuContainerVC.swift */; };
+		BC457AB92503CA6000B0B0F9 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC457AB72503CA6000B0B0F9 /* MenuItem.swift */; };
+		BC457ABA2503CA6000B0B0F9 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC457AB82503CA6000B0B0F9 /* SideMenuViewController.swift */; };
 		BC7B74CA24F7955300913A19 /* UsingPresentationLayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74C924F7955300913A19 /* UsingPresentationLayerVC.swift */; };
 		BC7B74CD24F79D3D00913A19 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74CC24F79D3D00913A19 /* Extensions.swift */; };
 		BC7B74CF24F79EE800913A19 /* DisableImplicitAnimsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B74CE24F79EE800913A19 /* DisableImplicitAnimsVC.swift */; };
@@ -78,6 +81,9 @@
 		BC38251D24F6113400DF80DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC457A7D2503463F00B0B0F9 /* ConstraintAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintAnimationVC.swift; sourceTree = "<group>"; };
 		BC457A7F250349C500B0B0F9 /* ExpandableListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableListVC.swift; sourceTree = "<group>"; };
+		BC457A852503C93E00B0B0F9 /* SlideMenuContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuContainerVC.swift; sourceTree = "<group>"; };
+		BC457AB72503CA6000B0B0F9 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		BC457AB82503CA6000B0B0F9 /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		BC7B74C924F7955300913A19 /* UsingPresentationLayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingPresentationLayerVC.swift; sourceTree = "<group>"; };
 		BC7B74CC24F79D3D00913A19 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BC7B74CE24F79EE800913A19 /* DisableImplicitAnimsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableImplicitAnimsVC.swift; sourceTree = "<group>"; };
@@ -199,12 +205,31 @@
 			path = CATest;
 			sourceTree = "<group>";
 		};
+		BC457A842503C71C00B0B0F9 /* 3DAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				BC457ABD2503CA8A00B0B0F9 /* SlideMenu */,
+			);
+			path = 3DAnimations;
+			sourceTree = "<group>";
+		};
+		BC457ABD2503CA8A00B0B0F9 /* SlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				BC457AB72503CA6000B0B0F9 /* MenuItem.swift */,
+				BC457AB82503CA6000B0B0F9 /* SideMenuViewController.swift */,
+				BC457A852503C93E00B0B0F9 /* SlideMenuContainerVC.swift */,
+			);
+			path = SlideMenu;
+			sourceTree = "<group>";
+		};
 		BC7B74CB24F7958700913A19 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				BCACA37525032D48004D8DC1 /* BaseViewController.swift */,
 				BC7B74E924F89C6100913A19 /* TableViewController.swift */,
 				BCACA38725033B7A004D8DC1 /* CenteredImageViewVC.swift */,
+				BC457A842503C71C00B0B0F9 /* 3DAnimations */,
 				BCACA37E25033306004D8DC1 /* UIViewPropertyAnimatorIOS10 */,
 				BC27040A2500DBC20042A29B /* ViewControllerTransition */,
 				BCC60A9F24FF8C1C003B094C /* UIViewAnimations */,
@@ -436,6 +461,7 @@
 				BCED3FCB24FE54B300187CF4 /* BouncingBallTimer.swift in Sources */,
 				BC7B74F324F9F53600913A19 /* PausingAnimationVC.swift in Sources */,
 				BCED3FBD24FB883A00187CF4 /* BoucingBallVC.swift in Sources */,
+				BC457ABA2503CA6000B0B0F9 /* SideMenuViewController.swift in Sources */,
 				BC7B74EA24F89C6100913A19 /* TableViewController.swift in Sources */,
 				BC7B74D924F7B02400913A19 /* VirtualPropertyAnimsVC.swift in Sources */,
 				BC7B74E624F8979700913A19 /* RenderInContextVC.swift in Sources */,
@@ -444,6 +470,8 @@
 				BC7B74D724F7A7C200913A19 /* MovingAircraftVC.swift in Sources */,
 				BCED3FBB24FB6B1800187CF4 /* ClockVC.swift in Sources */,
 				BC457A80250349C500B0B0F9 /* ExpandableListVC.swift in Sources */,
+				BC457AB92503CA6000B0B0F9 /* MenuItem.swift in Sources */,
+				BC457A862503C93E00B0B0F9 /* SlideMenuContainerVC.swift in Sources */,
 				BC7B74E424F8971200913A19 /* ButtonVC.swift in Sources */,
 				BCC60A9E24FF7B31003B094C /* ImageCarouselVC.swift in Sources */,
 				BCED3FB924FB669700187CF4 /* EasingKeyframeAnimationVC.swift in Sources */,
