@@ -30,6 +30,15 @@ class ParticleEmittersVC: BaseViewController {
         emitterCell.lifetime = 3.5
         emitterCell.yAcceleration = 70.0
         emitterCell.xAcceleration = 10.0
+        emitterCell.velocity = 20.0
+        emitterCell.velocityRange = 200.0
+        emitterCell.emissionLongitude = .pi * -0.5
+        emitterCell.emissionRange = .pi * 0.5
+        emitterCell.redRange = 0.3
+        emitterCell.greenRange = 0.3
+        emitterCell.blueRange = 0.3
+        emitterCell.scale = 0.8
+        emitterCell.scaleRange = 0.8
         emitter.emitterCells = [emitterCell]
         
     }
