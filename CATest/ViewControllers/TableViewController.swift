@@ -60,6 +60,9 @@ class TableViewController: UITableViewController {
         ].reversed()),
         ("3d animations", [
             SlideMenuContainerVC.self
+        ].reversed()),
+        ("Other animations", [
+            ParticleEmittersVC.self
         ].reversed())
     ].reversed()
     
