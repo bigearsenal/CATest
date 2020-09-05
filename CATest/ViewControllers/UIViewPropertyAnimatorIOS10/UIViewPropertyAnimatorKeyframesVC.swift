@@ -12,6 +12,6 @@ import UIKit
 class UIViewPropertyAnimatorKeyframesVC: CenteredImageViewVC {
     
     override func imageViewDidTouch() {
-        AnimatorFactory.jiggle(view: imageView)
+        UIViewPropertyAnimator.jiggle(view: imageView)
     }
 }

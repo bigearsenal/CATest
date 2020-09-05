@@ -22,7 +22,7 @@
 
 import UIKit
 
-class AnimatorFactory {
+extension UIViewPropertyAnimator {
     static func scaleUp(view: UIView) -> UIViewPropertyAnimator {
         let scale = UIViewPropertyAnimator(duration: 0.33, curve: .easeIn)
         scale.addAnimations {
@@ -62,4 +62,18 @@ class AnimatorFactory {
             view.alpha = visible ? 1 : 0
         }, completion: nil)
     }
+    
+    @discardableResult
+    static func animateConstraint(view: UIView, constraint:
+        NSLayoutConstraint, by: CGFloat) -> UIViewPropertyAnimator {
+        
+        let spring = UISpringTimingParameters(dampingRatio: 0.55)
+        let animator = UIViewPropertyAnimator(duration: 1.0, timingParameters: spring)
+        animator.addAnimations {
+            constraint.constant += by
+            view.layoutIfNeeded()
+        }
+        return animator
+    }
 }
+
