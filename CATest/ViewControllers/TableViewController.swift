@@ -52,7 +52,9 @@ class TableViewController: UITableViewController {
         ].reversed()),
         ("UIViewPropertyAnimator (iOS 10)", [
             UIViewPropertyAnimatorVC.self,
-            UIViewPropertyAnimatorKeyframesVC.self
+            UIViewPropertyAnimatorKeyframesVC.self,
+            BlurAnimationVC.self,
+            SpringAnimatorVC.self
         ].reversed())
     ].reversed()
     

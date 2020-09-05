@@ -9,19 +9,9 @@
 import Foundation
 import UIKit
 
-class UIViewPropertyAnimatorKeyframesVC: BaseViewController {
-    let imageView = UIImageView(width: 100, height: 100, cornerRadius: 20, imageNamed: "dog")
+class UIViewPropertyAnimatorKeyframesVC: CenteredImageViewVC {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.addSubview(imageView)
-        imageView.autoCenterInSuperview()
-        
-        imageView.isUserInteractionEnabled = true
-        imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(imageViewDidTouch)))
-    }
-    
-    @objc func imageViewDidTouch() {
+    override func imageViewDidTouch() {
         AnimatorFactory.jiggle(view: imageView)
     }
 }
